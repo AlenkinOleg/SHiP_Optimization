@@ -7,8 +7,9 @@ For this way you need to have docker installed on your machine.
 ```
 docker pull oleg94/worker
 ```
-1. Define environment variable, you can place it anywhere
+1. Clone the repository and define new environment variable (you can choose any path for this repository).
 ```
+git clone https://github.com/AlenkinOleg/SHiP_Optimization.git
 export SHIPOPT=/SHiP_Optimization
 ```
 1.
