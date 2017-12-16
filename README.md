@@ -7,4 +7,8 @@ For this way you need to have docker installed on your machine.
 ```
 docker pull oleg94/worker
 ```
-1. Item 2
+1. Define environment variable, you can place it anywhere
+```
+export SHIPOPT=/SHiP_Optimization
+```
+1.
