@@ -45,9 +45,9 @@ if __name__=='__main__':
         step_X = observations[observations.columns[:-1]].values
         #because we want to maximize
         step_Y = -observations[observations.columns[-1:]].values
-        ignored_X = step_X[np.isnan(step_Y.ravel(), dtype=np.float64)]
-        step_X = step_X[~np.isnan(step_Y.ravel(), dtype=np.float64)]
-        step_Y = step_Y[~np.isnan(step_Y.ravel(), dtype=np.float64)]
+        ignored_X = step_X[np.isnan(step_Y.ravel())]
+        step_X = step_X[~np.isnan(step_Y.ravel())]
+        step_Y = step_Y[~np.isnan(step_Y.ravel())]
         bo = GPyOpt.methods.BayesianOptimization(f=None, domain=space, constraints=constraints, X=step_X,\
                                                  Y=step_Y, de_duplication=True, initial_design_numdata=N_INITIAL)
         new_point = bo.suggest_next_locations(ignored_X=ignored_X)[0]
