@@ -30,4 +30,4 @@ This script will add new points to file observations/observations.csv
 
 ## Running on Skygrid
 For this way you should have access to SkyGrid cluster and jupyter notebook should be installed.
-All pipeline of optimization on skygrid is placed at Skygrid_optimization.ipynb
+Full pipeline of optimization on skygrid is placed at Skygrid_optimization.ipynb
