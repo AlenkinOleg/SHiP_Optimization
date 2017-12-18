@@ -1,0 +1,3 @@
+KINIT_USERNAME = 'login'
+KINIT_PASSWD = 'passwd'
+N_EVENTS = 100
